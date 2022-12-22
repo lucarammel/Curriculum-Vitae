@@ -2,6 +2,8 @@
 
 Here you cand find attached the [**PDF version**](https://github.com/lucarammel/Curriculum-Vitae/blob/main/CV%20Lucas%20PEREIRA.pdf) of my CV.
 
+[**Download it!**](https://raw.githubusercontent.com/lucarammel/Curriculum-Vitae/main/CV%20Lucas%20PEREIRA.pdf) 
+
 ## Organisation of the project
 
 * Mother function : `cv.tex`
