@@ -1,0 +1,161 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[table]{xcolor}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Lucas}{Pereira}
+\position{Data Scientist {\enskip\cdotp\enskip}Implementing data solutions for Climate \& Energy}
+\address{Paris}
+
+\mobile{0616800315}
+\email{lucaspereira0497@gmail.com}
+\extrainfo{SIREN XXXXXXXX}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company}
+  {Adress\\ Postal}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Devis n° XXX pour la prestation de DataScientist}
+% How the letter is opened
+\letteropening{Madame, Monsieur,}
+% How the letter is closed
+\letterclosing{Bien à vous,}
+% Any enclosures with the letter
+%\letterenclosure[Attache]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Lucas Pereira~~~·~~~Data Scientist~~·~~SIREN XXXXXX}
+  {Devis N° XXXX}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+Vous trouverez ci-après le devis pour la prestation de data science.
+
+% Task Table
+\vspace{1cm} % Add space between paragraphs and tables
+
+% Increase padding inside table cells
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\tablefont}{\fontsize{10pt}{13pt}\selectfont}
+\colorlet{tabletext}{darkgray} % Example: blue color
+
+\begin{table}[h!]
+    \centering
+    \tablefont
+    \color{tabletext}
+    \begin{tabular}{C{5cm} C{5cm} C{5cm}}
+        \rule{0pt}{2.5ex} \textbf{Référence} & \textbf{Date} & \textbf{Echéance} \\
+        \hline
+        \rule{0pt}{2.5ex} XXX (provisoire) & 2024/01/01 & 2024/01/10
+    \end{tabular}
+\end{table}
+
+% Task Table
+\begin{table}[h!]
+    \centering
+    \tablefont
+    \caption{Description des tâches et prix}
+    \medskip
+    \color{tabletext} % Apply custom color to table text
+    \begin{tabular}{|p{6cm}|C{3cm}|C{4cm}|C{4cm}|}
+        \hline
+        \rule{0pt}{2.5ex} \textbf{Tâches} & \textbf{Quantité (J)} & \textbf{Taux Journalier HT (€)} & \textbf{Taux Journalier TTC (€)} \\
+        \hline
+        \rule{0pt}{2.5ex} Analyse des données & 20 & 100 & 120 \\
+        \hline
+        \rule{0pt}{2.5ex} Développement de l'application & 40 & 150 & 180 \\
+        \hline
+        \rule{0pt}{2.5ex} Tests et validation & 15 & 80 & 96 \\
+        \hline
+        \rule{0pt}{2.5ex} Documentation & 10 & 50 & 60 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{p{6cm} C{3cm} C{4cm} C{4cm}}
+        \rule{0pt}{2.5ex} & & \textbf{Total HT (€)} & XXX € \\
+        \rule{0pt}{2.5ex} & & \textbf{Total TTC (€)} & XXX €
+    \end{tabular}
+\end{table}
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
